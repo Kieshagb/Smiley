@@ -1,0 +1,7 @@
+"0",""
+"0","# Q-Q plot"
+"0","grampian_fife_data %>%                          "
+"0","  ggplot(aes(sample = alcohol_admissions)) +          "
+"0","  geom_qq() + "
+"0","  geom_qq_line(colour = ""blue"") + "
+"0","  facet_wrap(~health_board)"

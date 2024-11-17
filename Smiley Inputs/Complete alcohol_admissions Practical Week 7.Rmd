@@ -1,0 +1,44 @@
+---
+title: "Week 7 R Markdown Practical"
+author: "KGB"
+date: "2024-11-16"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load packages
+
+```{r}
+library(tidyverse)
+```
+
+## Read in Data
+```{r read-data}
+admission_data
+
+```
+
+```{r plot-data-distribution}
+
+admission_data %>%
+  filter(year == 2019) %>%
+  ggplot(aes(x = alcohol_admissions)) +
+  geom_histogram(bins = 15) +
+  facet_wrap(~health_board)
+```
+
+```{r read-admission-deprivation-data}
+# alcohol-related hospital admissions
+data <- read_csv("alcohol-admissions_deprivation-data.csv") 
+# alcohol-related hospital admissions
+
+
+
+
+```
+
+```
+

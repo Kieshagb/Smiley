@@ -1,0 +1,8 @@
+"0",""
+"0","# boxplot"
+"0","grampian_fife_data %>%                          "
+"0","  ggplot(aes(x = health_board,             "
+"0","             y = alcohol_admissions)) +    "
+"0","  geom_boxplot() +                        "
+"0","  geom_jitter(alpha = 0.4) +               # add data points"
+"0","  theme(legend.position = ""none"")          # remove legend"

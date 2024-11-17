@@ -1,0 +1,6 @@
+"0",""
+"0","admission_data %>%"
+"0","  filter(year == 2019) %>%"
+"0","  ggplot(aes(x = alcohol_admissions)) +"
+"0","  geom_histogram(bins = 15) +"
+"0","  facet_wrap(~health_board)"
